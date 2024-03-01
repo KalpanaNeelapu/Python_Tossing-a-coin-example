@@ -1,0 +1,7 @@
+from random import randint
+tokensInPile = int(input("Enter how many tokens would you like in the pile? "))
+print("token pile : ","*" * tokensInPile)
+x = randint(1,tokensInPile)
+print("I remove {} tokens from the pile!".format(x))
+leftTokensAfterRemoval = tokensInPile - x
+print("token pile : ","*" *leftTokensAfterRemoval)
