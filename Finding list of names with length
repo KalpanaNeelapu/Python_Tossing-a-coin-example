@@ -1,0 +1,16 @@
+n=int(input("enter how many names u want to generate:"))
+if n<=0:
+    print("{} is a invalid input".format(n))
+lst=[]
+for i in range(1,n+1):
+    val=input("enter {} name:".format(i))
+    lst.append(val)
+else:
+    print("list of names {}".format(lst))
+d={}
+for name in lst:
+    d[name]=len(name)
+else:
+    #print(d) if we write this it will print k:v values
+    for k,v in d.items():
+        print("{}-->{}".format(k,v))
